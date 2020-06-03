@@ -1,0 +1,107 @@
+/* Globales */
+img{max-width: 100%;}
+.contenedor {width: 95%;max-width: 120rem; /** = 1200px **/margin: 0 auto;}
+h1 {font-size: 3.8rem;}
+h2 {font-size: 3.4rem;}
+h3 {font-size: 3rem;}
+h4 {font-size: 2.6rem;}
+h2.fw-300 {font-size: 2.9rem; margin: 1.5rem 0;}
+h3.fw-300 {font-size: 2rem; margin: 1.87rem 0;}
+
+/* Utilidades */
+.seccion {margin-top: 2rem; margin-bottom: 2rem;}
+.fw-300 {font-weight: 300;}
+.centrar-texto {text-align: center;}
+.d-block {display: block!important; /* Sobreescribe la ley de CSS, aplicando este estilo siempre */}
+.contenido-centrado {max-width: 800px;}
+
+/* Navegacion */
+.navegacion a {color: #ffffff; text-decoration: none; font-size: 2.2rem; display: block;}
+@media (min-width: 768px) {
+    .navegacion a {display: inline-block; font-size: 1rem; /* 1rem = 10px */ margin-right: 2rem;}
+    .navegacion a:last-of-type {margin: 0;}
+}
+.navegacion a:last-of-type {margin: 0;}
+.navegacion a:hover {color: #71b100;}
+
+/* Iconos nosotros */
+@media (min-width: 768px) {
+    .iconos-nosotros {display: flex; justify-content: space-between;}
+}
+.icono {text-align: center;}
+@media (min-width: 768px) {
+    .icono {flex-basis: calc(33.3% - 1rem)};
+}
+.icono h3 {margin-top:1.5rem; line-height:1.6rem; font-weight:600; text-transform: uppercase;}
+
+/* Anuncios */
+@media (min-width: 768px) {
+    .contenedor-anuncios {display: flex; justify-content: space-between; flex-wrap: wrap;}
+}
+.anuncio {margin-bottom: 2rem;}
+@media (min-width: 768px) {
+    .anuncio {flex: 0 0 calc(33.3% - 1rem); /** Forma corta. Contiene en orden: flex-grow, flex-shrink, flex-basis **/}
+}
+.contenido-anuncio {padding: 2rem;}
+.contenido-anuncio h3,
+.contenido-anuncio p {margin: 0;}
+.precio {color: #71b100;font-weight: 700;}
+.iconos-caracteristicas {list-style: none; padding: 0; display: flex; justify-content: space-evenly; flex: 1; max-width: 500px;;}
+.iconos-caracteristicas li {/*flex: 1;*/display: flex;}
+.iconos-caracteristicas li img {margin-right: 0.8rem;}
+.ver-todas {display: flex; justify-content: flex-end;}
+.badge-yellow {color: #fff; background-color: #e08709;}
+
+/** Botones **/
+.boton {color: #ffffff; font-weight: 700; text-decoration: none; font-size: 1rem; padding: 1rem 3rem; margin-top: 2rem; display: inline-block; text-align: center; border: none; display: block; flex: 0 0 100%;}
+@media (min-width: 768px) {
+    .boton {display: inline-block; flex: 0 0 auto;}
+}
+.boton:hover {cursor: pointer;}
+.boton-amarillo {background-color: #e08709;}
+.boton-verde {background-color: #71b100;}
+.boton-amarillo:hover {cursor: pointer; text-decoration:none;}
+
+/* Acceder HOME */
+.imagen-acceder {background-position: center center; background-size: cover; height: 22rem; display: flex; align-items: center;}
+.contenido-acceder {flex: 0 0 95%;color: #ffffff;}
+.contenido-acceder p {font-size: 1.3rem; margin: 16px 0;}
+.contenido-acceder h2 {font-size: 2.9rem; margin: 1.8rem 0}
+
+/* Seccion Inferior */
+@media (min-width: 768px) {
+    .seccion-inferior {display: flex; justify-content: space-between;}
+    .seccion-inferior .blog {flex-basis: 60%;}
+    .seccion-inferior .comentarios {flex-basis: calc(40% - 2rem);}
+}
+.entrada-blog {margin-bottom: 2rem;}
+@media (min-width: 768px) {
+    .entrada-blog {display: flex; justify-content: space-between;}
+}
+@media (min-width: 768px) {
+    .entrada-blog .imagen {flex-basis: 40%;}
+    .entrada-blog .texto-entrada {flex-basis: calc(60% - 3rem);}
+}
+.texto-entrada a {color: #000000; text-decoration: none;}
+.texto-entrada h4 {font-size: 1.6rem; margin: 0; line-height: 1.4;}
+.texto-entrada h4::after {content: ''; display: block; width: 13.5rem; height: .5rem; background-color: #71b100; margin-top: 10px;}
+.texto-entrada span {color: #e08709;}
+.texto-entrada p {margin-top: 1rem;}
+
+/* Comentarios */
+.comentario {background-color: #71b100; font-size: 1.6rem; padding: 2rem; color: #ffffff; border-radius: 1.5rem;}
+.comentario p { text-align: center;}
+/*.comentario blockquote::before {content: ''; background-image: url(../public/images/comilla.svg); width: 4rem; height: 4rem; position: absolute; left: -2rem;}*/
+.comentario blockquote {position: relative; padding-left: 5rem; font-weight: 300;}
+
+/** Footer **/
+.site-footer {background-color: #333333; margin: 0;}
+.contenedor-footer {padding: 3rem 0; text-align: center;}
+@media (min-width: 768px) {
+    .contenedor-footer {display: flex; justify-content: space-between;}
+}
+.site-footer nav {display: none;}
+@media (min-width: 768px) {
+    .site-footer nav {display: block;}
+}
+.copyright {margin:0; color: #ffffff;}
