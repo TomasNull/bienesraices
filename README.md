@@ -1,3 +1,5 @@
+![public/images/logocifp.png](public/images/logocifp.png)
+
 # Proyecto final para FP Desarrollo de Aplicaciones Web
 
 ## 1. Introducción
@@ -66,17 +68,17 @@ La aplicación dará servicio a cuatro tipos de usuarios:
 
 ### 4.2. Casos de uso
 
-![Texto alternativo](public/images/141.jpg)
+![public/images/141.jpg](public/images/141.jpg)
 
-![Texto alternativo](public/images/142.jpg)
+![public/images/142.jpg](public/images/142.jpg)
 
-![Texto alternativo](public/images/143.jpg)
+![public/images/143.jpg](public/images/143.jpg)
 
 ### 4.3. Modelo de BD
 
 Modelo generado gracias a `PHPmyadmin`
 
-![Texto alternativo](public/images/145.jpg)
+![public/images/145.jpg](public/images/145.jpg)
 
 ### 4.4. Creación de tablas
 
