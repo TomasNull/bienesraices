@@ -5,7 +5,7 @@
 - [2. Objetivos](#objetivos)  												  
 - [3. Tecnologías escogidas y justificación](#tecnologias_escogidas)  						       	   	  
   - [3.1. Framework seleccionado](#framework_seleccionado)  			          	     		  
-  - [3.2. Motor de bases de datos](#bases_datos)   						    		  
+  - [3.2. Motor de bases de datos](#motor_bd)		    		  
   - [3.3. Herramientas de desarrollo.](#herramientas_desarrollo)  						    		  
 - [4. Diseño de la aplicación](#diseno)  										  
   - [4.1. Usuarios y roles](#usuarios_roles) 								     	  
@@ -115,7 +115,16 @@ Se adjunta script para la creación de tablas y la inserción de datos actuales 
 Script disponible en la versión PDF.
 ```
 
-Cabe destacar que gracias a las factories y las migrations la creación de las tablas y la generación de datos se simplifica a ejecutar un solo comando. Este tema se detallará en <insertar punto 5.x>
+Cabe destacar que gracias a las factories, seedings y las migrations la creación de las tablas y la generación de datos se simplifica a ejecutar un solo comando en el entorno local. 
+
+Para la creación de tablas a través de las migrations se ejecuta el comando:
+```
+php artisan migrate
+```
+Para la generación de datos en las tablas creadas se ejecuta el comando:
+```
+php artisan migrate:fresh --seed
+```
 
 <a name="arquitectura"></a>
 ## 5. Arquitectura de la aplicación
