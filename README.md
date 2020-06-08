@@ -15,6 +15,7 @@
 - [5. Arquitectura de la aplicación](#arquitectura)   						         	   		 
   - [5.1. Estructura de carpetas del proyecto](#estructura)  						         		 
   - [5.2. Recursos externos](#recursos)  							        		  
+- [6. Notas](#notas) 
 
 # Proyecto final para FP Desarrollo de Aplicaciones Web
 
@@ -189,3 +190,13 @@ Durante el desarrollo de la aplicación se han usado diversos recursos externos,
 - `Laravel Socialite`: integración de redes sociales para el acceso a la aplicación. Se han de tener las APPS de inicio de sesión para las redes sociales requeridas.
 - `Laravel Datables`: mediante este plug-in de Jquery se permite la generación de tablas sencillas que trabajan con AJAX.
 - `Vue.js`: framework progresivo para la construcción de interfaces de usuario.
+
+<a name="notas"></a>
+## 6. Notas
+
+Se realiza un listado de funcionalidades y mejoras pendientes:
+- Implementar la administración de clientes y agentes para el usuario admin.
+- Corrección de errores en cuanto a diseño.
+- Completar el listado de palabras a traducir para los idiomas disponibles.
+- Implementar opción para que el cliente deje de seguir un inmueble.
+- Implementar la sección de blog que se indica en la home.
