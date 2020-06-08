@@ -1,18 +1,37 @@
 ![public/images/logocifp.png](public/images/logocifp.png)
 
+## Índice
+- [1. Introducción](#introduccion) 						 
+- [2. Objetivos](#objetivos)  												  
+- [3. Tecnologías escogidas y justificación](#tecnologias_escogidas)  						       	   	  
+  - [3.1. Framework seleccionado](#framework_seleccionado)  			          	     		  
+  - [3.2. Motor de bases de datos](#bases_datos)   						    		  
+  - [3.3. Herramientas de desarrollo.](#herramientas_desarrollo)  						    		  
+- [4. Diseño de la aplicación](#diseno)  										  
+  - [4.1. Usuarios y roles](#usuarios_roles) 								     	  
+  - [4.2. Casos de uso](#casos_uso)  						    	  						  
+  - [4.3. Modelo de BD](#modelo_bd)
+  - [4.4. Creación de tablas](#creacion_tablas)
+- [5. Arquitectura de la aplicación](#arquitectura)   						         	   		 
+  - [5.1. Estructura de carpetas del proyecto](#estructura)  						         		 
+  - [5.2. Recursos externos](#recursos)  							        		  
+
 # Proyecto final para FP Desarrollo de Aplicaciones Web
 
+<a name="introduccion"></a>
 ## 1. Introducción
 
 Este proyecto consiste en el desarrollo de una aplicación web destinada a la inmobiliaria “Bienes Raíces” cuyo propósito es presentar las casas y departamentos de lujo que tienen a su disposición para venta y alquiler. La aplicación consta de varias interfaces principales, desarrolladas para cada rol de usuario registrado.
 
 La aplicación se desarrolla en web de forma que los usuarios podrán acceder a ella sin necesidad de realizar instalación de software en su equipo informático, y con el único requisito de tener un navegador web y una conexión a Internet. Estos requisitos a día del desarrollo de esta aplicación, están presentes en todos los hogares y oficinas del país.
 
+<a name="objetivos"></a>
 ## 2. Objetivos
 
 La razón de la elaboración de este proyecto viene a raíz de que una nueva inmobiliaria quiere darse a conocer de manera virtual. Mediante la web se podrá realizar una presentación de las propiedades que gestionan, así como tener un control sobre los clientes interesados en las propiedades y una información sobre los mismos.
 Con la introducción de esta aplicación en la empresa se espera llegar a un sector más amplio y a la vez internacional de clientes.
 
+<a name="tecnologias_escogidas"></a>
 ## 3. Tecnologías escogidas y justificación
 
 La aplicación se desarrolla en su mayor parte usando lenguaje de servidor PHP. No obstante, existen partes de la misma realizadas en lenguaje cliente Javascript y la integración de la biblioteca Jquery junto con AJAX.
@@ -21,6 +40,7 @@ Cabe mencionar que todo el software utilizado es libre, con lo que la empresa te
 
 Pero lo más importante a destacar es que el lenguaje de programación escogido va asociado al framework utilizado en el desarrollo.
 
+<a name="framework_seleccionado"></a>
 ### 3.1. Framework seleccionado
 
 El framework usado durante el desarrollo del proyecto es Laravel v6.17.1. Las razones de su elección son las siguientes:
@@ -35,6 +55,7 @@ El framework usado durante el desarrollo del proyecto es Laravel v6.17.1. Las ra
 - A través de Artisan se puede crear la tabla de usuarios, el validador de autenticación, las rutas para: registro de usuarios, validación de correo electrónico, restauración de contraseña; formularios, contraseñas encriptadas y protección de las rutas.
 - Cuenta con un motor de plantillas *`Blade`* para crear el render del HTML final que se le enviará al cliente en respuesta a cada petición. Las plantillas son reutilizables en cada Blade que se crea haciendo uso de de `@extends` para su uso, y `@section` para agregar contenido.
 
+<a name="motor_bd"></a>
 ### 3.2. Motor de bases de datos
 
 El motor de base de datos usado es `MySql`. Las razones de su elección son las siguientes:
@@ -43,6 +64,7 @@ El motor de base de datos usado es `MySql`. Las razones de su elección son las 
 - Es un motor muy extendido en la comunidad de desarrolladores, con lo que conseguir ayuda es muy sencillo.
 - La labor de mantenimiento de una base de datos MySql es muy fácil debido a que presenta menos funciones frente a otros sistemas gestores. Esto permite que el propio desarrollador sea capaz de llevar a cabo el mantenimiento de la misma sin tener que recurrir a un administrador de base de datos.
 
+<a name="herramientas_desarrollo"></a>
 ### 3.3. Herramientas de desarrollo.
 
 Las herramientas de desarrollo utilizadas son:
@@ -55,8 +77,10 @@ Las herramientas de desarrollo utilizadas son:
     - `PHP Intelephense`
 - `Laragon`: para la creación del entorno de desarrollo de manera local. Permite la configuración de la versión a utilizar de `PHP`, `Apache`, `MySQL` y `Node.js`.
 
+<a name="diseno"></a>
 ## 4. Diseño de la aplicación
 
+<a name="usuarios_roles"></a>
 ### 4.1. Usuarios y roles
 
 La aplicación dará servicio a cuatro tipos de usuarios:
@@ -66,6 +90,7 @@ La aplicación dará servicio a cuatro tipos de usuarios:
   - `Agente`: Encargado de mantener al día la información de las propiedades, dar de alta a nuevas, modificar sus datos si es necesario, poder ponerse en contacto con los clientes desde la propia aplicación, etc. Todo Agente se considera como Cliente también, por lo tanto podrá realizar las mismas acciones que estos.
   - `Administrador`: Mantendrá un control total sobre la aplicación. Será el responsable de administrar las propiedades, a los clientes y a los agentes.
 
+<a name="casos_uso"></a>
 ### 4.2. Casos de uso
 
 ![public/images/141.jpg](public/images/141.jpg)
@@ -74,12 +99,14 @@ La aplicación dará servicio a cuatro tipos de usuarios:
 
 ![public/images/143.jpg](public/images/143.jpg)
 
+<a name="modelo_bd"></a>
 ### 4.3. Modelo de BD
 
 Modelo generado gracias a `PHPmyadmin`
 
 ![public/images/145.jpg](public/images/145.jpg)
 
+<a name="creacion_tablas"></a>
 ### 4.4. Creación de tablas
 
 Se adjunta script para la creación de tablas y la inserción de datos actuales en la base de datos
@@ -90,8 +117,10 @@ Script disponible en la versión PDF.
 
 Cabe destacar que gracias a las factories y las migrations la creación de las tablas y la generación de datos se simplifica a ejecutar un solo comando. Este tema se detallará en <insertar punto 5.x>
 
+<a name="arquitectura"></a>
 ## 5. Arquitectura de la aplicación
 
+<a name="estructura"></a>
 ### 5.1. Estructura de carpetas del proyecto
 
 La estructura del proyecto en Laravel se compone de las siguientes carpetas:
@@ -137,6 +166,7 @@ La estructura del proyecto en Laravel se compone de las siguientes carpetas:
 
 - `.env`: en este archivo se configurará el modo en que se ejecuta nuestra aplicación. Además se puede configurar la conexión a la base de datos y la conexión con el servidor de correo electrónico.
 
+<a name="recursos"></a>
 ### 5.2. Recursos externos
 
 Durante el desarrollo de la aplicación se han usado diversos recursos externos, es decir, librerías y código no escrito por el desarrollador de esta aplicación. Los recursos externos son:
